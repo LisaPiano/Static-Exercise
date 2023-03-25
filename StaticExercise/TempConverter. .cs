@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace StaticExercise
 {
-    public class TempConverter
+    public static class TempConverter
     {
         public static double FahrenheitToCelsius(double fahrenheitTemp)
         {
-            return (fahrenheitTemp - 32) * 5 / 9;
+            return (fahrenheitTemp - 32) / 1.8;
         }
 
         public static double CelsiusToFahrenheit(double celsiusTemp)
